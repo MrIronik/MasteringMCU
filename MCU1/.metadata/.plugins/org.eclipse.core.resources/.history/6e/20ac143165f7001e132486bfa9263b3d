@@ -1,0 +1,18 @@
+/*
+ * stm32f411.h
+ *
+ *  Created on: Apr 10, 2024
+ *      Author: MrIro
+ */
+
+#ifndef INC_STM32F411XX_H_
+#define INC_STM32F411XX_H_
+
+
+#define FLASH_BASEADDR				0x08000000
+#define SRAM_BASEADDR				0x20000000
+
+
+
+
+#endif /* INC_STM32F411XX_H_ */

@@ -1,0 +1,29 @@
+21:57:06 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/004button_interrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"D:/GitHub/MasteringMCU/MCU1/stm32f4xx_drivers/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/004button_interrupt.d" -MT"Src/004button_interrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/004button_interrupt.o"
+../Src/004button_interrupt.c: In function 'EXTI2_IRQHandler':
+../Src/004button_interrupt.c:60:27: warning: 'i' is used uninitialized [-Wuninitialized]
+   60 |         for(uint32_t i; i < 700000; i++);
+      |                         ~~^~~~~~~~
+../Src/004button_interrupt.c:60:22: note: 'i' was declared here
+   60 |         for(uint32_t i; i < 700000; i++);
+      |                      ^
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\MasteringMCU\MCU1\stm32f4xx_drivers\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.12.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: stm32f4xx_drivers.elf has a LOAD segment with RWX permissions
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   2368	      8	   1568	   3944	    f68	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+21:57:13 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j8 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2368	      8	   1568	   3944	    f68	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 

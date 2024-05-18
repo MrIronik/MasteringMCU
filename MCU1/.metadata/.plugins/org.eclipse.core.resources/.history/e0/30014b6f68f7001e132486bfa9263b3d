@@ -1,0 +1,30 @@
+/*
+ * stm32f411.h
+ *
+ *  Created on: Apr 10, 2024
+ *      Author: MrIro
+ */
+
+
+#ifndef INC_STM32F411XX_H_
+#define INC_STM32F411XX_H_
+
+/*
+ * Base addresses of Flash, ROM and SRAM memories
+ */
+
+#define FLASH_BASEADDR				0x08000000U
+#define SRAM_BASEADDR				0x20000000U
+#define ROM_BASEADDR	 			0x1FFF0000U
+
+/*
+ * Base addresses of AHBx Bus Peripheral
+ */
+
+#define PERIPH_BASE
+#define APB1PERIPH_BASE
+#define APB2PERIPH_BASE
+#define AHB1PERIPH_BASE
+#define AHB2PERIPH_BASE
+
+#endif /* INC_STM32F411XX_H_ */
